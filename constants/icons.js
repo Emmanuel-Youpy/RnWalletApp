@@ -16,6 +16,11 @@ const scan = require("../assets/icons/scan.png");
 const send = require("../assets/icons/send.png");
 const user = require("../assets/icons/user.png");
 const wallet = require("../assets/icons/wallet.png");
+const home = require("../assets/icons/icons8-home-24.png");
+const portfolio = require("../assets/icons/icons8-chart-24.png");
+const trade = require("../assets/icons/icons8-exchange-euro-24.png");
+const market = require("../assets/icons/icons8-basket-24.png");
+const profile = require("../assets/icons/icons8-admin-settings-male-24.png");
 
 export default {
   back,
@@ -36,4 +41,9 @@ export default {
   send,
   user,
   wallet,
+  home,
+  portfolio,
+  trade,
+  market,
+  profile,
 };

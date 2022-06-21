@@ -10,6 +10,7 @@ import Portfolio from "../screens/Portfolio";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { COLORS, icons } from "../constants";
 import TabIcon from "../components/TabIcon";
+import { AntDesign } from "@expo/vector-icons";
 
 const Tab = createBottomTabNavigator();
 
@@ -18,13 +19,15 @@ const Tabss = () => {
     <Tab.Navigator
       initialRouteName="Home"
       screenOptions={{
+        tabBarActiveTintColor: "#e91e63",
         title: false,
         tabBarShowLabel: false,
-        tabBarActiveTintColor: "gray",
+
         tabBarStyle: {
           position: "absolute",
-          backgroundColor: "black",
-          height: 140,
+          backgroundColor: "#2e343c",
+          height: 120,
+          tabBarActiveTintColor: "red",
         },
       }}
     >
@@ -34,7 +37,7 @@ const Tabss = () => {
         options={{
           tabBarLabel: "Home",
           tabBarIcon: ({ focused }) => (
-            <TabIcon focused={focused} icon={icons.Home} label="Home" />
+            <TabIcon focused={focused} icon={icons.home} label="Home" />
           ),
         }}
       />
@@ -46,7 +49,7 @@ const Tabss = () => {
           tabBarIcon: ({ focused }) => (
             <TabIcon
               focused={focused}
-              icon={icons.briefcase}
+              icon={icons.portfolio}
               label="Portfolio"
             />
           ),
@@ -60,7 +63,7 @@ const Tabss = () => {
           tabBarIcon: ({ focused }) => (
             <TabIcon
               focused={focused}
-              icon={icons.Trade}
+              icon={icons.trade}
               isTrade={true}
               label="Trade"
             />
@@ -81,9 +84,9 @@ const Tabss = () => {
         name="Profile"
         component={Profile}
         options={{
-          tabBarLabel: "Profilr",
+          tabBarLabel: "Profile",
           tabBarIcon: ({ focused }) => (
-            <TabIcon focused={focused} icon={icons.profile} label="Profilr" />
+            <TabIcon focused={focused} icon={icons.profile} label="Profile" />
           ),
         }}
       />
