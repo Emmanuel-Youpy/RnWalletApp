@@ -9,9 +9,9 @@ const TabIcon = ({ focused, icon, iconStyle, label, isTrade }) => {
         style={{
           alignItems: "center",
           justifyContent: "center",
-          width: 60,
-          height: 60,
-          borderRadius: 30,
+          width: 70,
+          height: 70,
+          borderRadius: 35,
           backgroundColor: COLORS.black,
         }}
       >
