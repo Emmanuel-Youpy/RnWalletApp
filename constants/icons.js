@@ -21,6 +21,7 @@ const portfolio = require("../assets/icons/icons8-chart-24.png");
 const trade = require("../assets/icons/icons8-exchange-euro-24.png");
 const market = require("../assets/icons/icons8-basket-24.png");
 const profile = require("../assets/icons/icons8-admin-settings-male-24.png");
+const withdraw = require("../assets/icons/icons8-withdrawal-24.png");
 
 export default {
   back,
@@ -46,4 +47,5 @@ export default {
   trade,
   market,
   profile,
+  withdraw,
 };
